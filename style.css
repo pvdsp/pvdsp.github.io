@@ -1,0 +1,88 @@
+#logo {
+    height: 2.5em;
+    margin-top: 2em;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: #E05038;
+}
+
+.title {
+  padding-left: 2em;
+}
+
+p {
+  font-size: 20px;
+  padding-left: 6.5em;
+  font-family: 'Lato', sans-serif;
+  color: #808080;
+}
+
+#name, #introduction, #instruction {
+  text-align: center;
+}
+
+#introduction {
+  margin-top: -40px
+}
+
+#instruction {
+  font-size: 14px;
+}
+
+.graphs {
+  overflow: hidden;
+  height: 300px;
+  padding-top: 40px;
+  width: 770px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#graph1, #graph2, #graph3 {
+  float: left;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4em;
+  color: #E05038;
+}
+
+h2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2em;
+  color: #E05038;
+}
+
+body {
+  background: linear-gradient(to right, #FFFFF0 , #F0EAD6);
+  margin: 2em;
+  padding: 2em;
+}
+
+.socialImages img {
+  height: 2.5em;
+  display: inline-block;
+  margin-left: -8px;
+}
+
+.menu {
+  display: none;
+  text-align: left;
+  position: relative;
+  font-size: 16px;
+}
+
+#menuBtn {
+  height: 2em;
+  margin-top: 40px;
+  float: right;
+}
+
+.fullMenu {
+  position: fixed;
+  top: 5px;
+}
