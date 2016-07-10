@@ -1,6 +1,7 @@
 #logo {
     height: 2.5em;
     margin-top: 2em;
+    cursor: pointer;
 }
 
 a, a:visited {
@@ -29,6 +30,7 @@ p {
 
 #instruction {
   font-size: 14px;
+  color: #808080;
 }
 
 .graphs {
