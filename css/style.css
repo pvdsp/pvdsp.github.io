@@ -23,7 +23,7 @@ p {
     text-align: center;
 }
 #introduction {
-    margin-top: -40px
+    margin-top: -40px;
 }
 #instruction {
     font-size: 14px;
@@ -52,7 +52,7 @@ h2 {
     color: #E05038;
 }
 body {
-    background: linear-gradient(to left, #FEFCFB, #FEFDFB);
+    background: #FEFCFB;
     margin: 2em;
     padding: 2em;
 }
