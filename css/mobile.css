@@ -1,0 +1,45 @@
+#logo {
+    height: 2em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+p {
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    color: #808080;
+    text-align: justify;
+}
+#graph {
+    display: none;
+}
+#content {
+    overflow: hidden;
+}
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    color: #E05038;
+}
+h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2em;
+    color: #E05038;
+    text-align: justify;
+}
+body {
+    background: #FEFCFB;
+    padding: 3em;
+}
+.socialBtn {
+    height: 1.8em;
+    padding-right: 10px;
+    opacity: 1;
+}
+a, a:visited {
+  text-decoration: none;
+  color: #E05038;
+}
+#logo, #title, #text, #social {
+  display: none;
+}
