@@ -34,6 +34,10 @@ body {
 .socialBtn {
     height: 1.8em;
     padding-right: 10px;
+    opacity: 0.6;
+}
+.socialBtn:hover {
+  opacity: 1;
 }
 a, a:visited {
   text-decoration: none;
