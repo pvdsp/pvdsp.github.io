@@ -18,7 +18,7 @@ p {
 }
 h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2.5em;
+    font-size: 2em;
     color: #E05038;
 }
 h2 {
@@ -29,7 +29,7 @@ h2 {
 }
 body {
     background: #FEFCFB;
-    padding: 3em;
+    padding: 44px;
 }
 .socialBtn {
     height: 1.8em;
