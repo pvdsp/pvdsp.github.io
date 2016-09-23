@@ -34,76 +34,46 @@
 </head>
 
 <body>
-    <script>
-        $(document).ready(function() {
-            $('#logo').fadeIn(1000);
-            $('#title').fadeIn(1000);
-            $('#text').fadeIn(1500);
-            $('#social').fadeIn(2000);
-        });
-    </script>
-    <img src="img/logo.png" alt="logo" id="logo"/>
-    <div id="content">
-        <div id="graph">
-            <canvas id="programmingSkills" width="500" height="500"></canvas>
-        </div>
-        <div id="introduction">
-            <h1 id="title">Who am I?</h1>
-            <div id="text">
-            <p>Hi there!
-                <br>
-                <br> My name is Patrick Van der Spiegel, a second year Computer Science student at the Vrije Universiteit Brussel in Belgium. I speak Dutch, English, French and Spanish. I have knowledge of Racket, JavaScript and HTML/CSS. I am interested in technology
-                and programming, art, design and cinema.
-                <br>
-                <br> Check out my repo's on <a href="https://github.com/pvdsp">GitHub</a>, read my film reviews on <a href="https://letterboxd.com/pvdsp/">Letterboxd</a> or follow me on social media:</p></div>
-            <div id="social">
-                <a href="https://twitter.com/pvdspieg" target="_blank"><img class="socialBtn" src="img/social/twitter.png"></img>
-                </a>
-                <a href="https://www.instagram.com/pvdspieg/" target="_blank"><img class="socialBtn" src="img/social/instagram.png"></img>
-                </a>
-                <a href="https://www.reddit.com/user/pvdsp/" target="_blank"><img class="socialBtn" src="img/social/reddit.png"></img>
-                </a>
-                <a href="https://medium.com/@patrick.vanderspiegel" target="_blank"><img class="socialBtn" src="img/social/medium.png"></img>
-                </a>
+
+    <img src="img/logo.png" id="logo"></img>
+
+    <script async src='https://pepper.swat.io/embed.js?eyJwb3NpdGlvbiI6InJpZ2h0IiwiY29sb3IiOiJGNjcyODAiLCJpY29uIjoiZW1haWwiLCJwcm9ub3VuIjoibWUiLCJpbnRyb1RleHQiOiJDb21wdXRlciBzY2llbmNlIHN0dWRlbnQgYXQgdGhlIFZVQiBpbiBCcnVzc2VscywgQmVsZ2l1bS4iLCJjaGFubmVscyI6W1sidHdpdHRlciIsInB2ZHNwIiwic29jaWFsIl0sWyJpbnN0YWdyYW0iLCJwdmRzcGllZyIsInNvY2lhbCJdLFsiZ2l0aHViIiwiZ2l0aHViLmNvbS9wdmRzcCIsInNvY2lhbCJdLFsiZW1haWwiLCJwYXRyaWNrQHB2ZHNwLmJlIiwiY2xhc3NpYyJdLFsid2Vic2l0ZSIsInB2ZHNwLmJlIiwiY2xhc3NpYyJdXX0='></script>
+    <div id="textbox">
+        <h1>Patrick Van der Spiegel</h1>
+
+        <center>
+            <div id="firstCard" />
+            <div class="card">
+                <div class="container">
+                    <p>Hi there!</p>
+                    <p>My name is Patrick Van der Spiegel, a second year Computer Science student at the VUB in Brussels, Belgium. My interests are programming and computer science, art, design and cinema. Read my film reviews on <a href="http://letterboxd.com/pvdsp/">Letterboxd</a>                        or read my posts on <a href="https://www.reddit.com/user/pvdsp">Reddit</a>.</p>
+                </div>
             </div>
-        </div>
     </div>
 
-    <script>
-        Chart.defaults.global.animationSteps = Math.round(5000 / 17);
+    <div class="secondCard"/>
+    <div class="card">
+        <div class="container">
+            <p><b>2009 — 2015</b>: Industriële Wetenschappen — Don Bosco Halle
+                <br>
+                <b>Since 2015</b>: Bachelor of Science in Computer Science — Vrije Universiteit Brussel</p>
+        </div>
+    </div>
+    </div>
 
-        var ctx = document.getElementById("programmingSkills").getContext("2d");
-        var data = {
-            labels: ["Scheme / Racket", "JavaScript", "HTML", "CSS"],
-            datasets: [{
-                label: "Programming Languages",
-                backgroundColor: "rgba(255,99,132,0.2)",
-                borderColor: "rgba(255,99,132,1)",
-                pointBackgroundColor: "rgba(255,99,132,1)",
-                pointBorderColor: "#fff",
-                pointHoverBackgroundColor: "#fff",
-                pointHoverBorderColor: "rgba(255,99,132,1)",
-                data: [9, 6, 8, 8]
-            }]
-        };
-
-        new Chart(ctx, {
-            type: 'radar',
-            data: data,
-            options: {
-                scale: {
-                    ticks: {
-                        beginAtZero: true,
-                        fixedStepSize: 2
-                    }
-                },
-                legend: {
-                    display: false,
-                }
-            }
-        });
-    </script>
-
+    <div class="secondCard"/>
+    <div class="card">
+        <div class="container">
+            <p class="hl">Programming languages:</p>
+            <p>
+                Racket
+                <br> Javascript
+                <br> HTML / CSS
+                </ul>
+        </div>
+    </div>
+    </div>
+    </center>
 </body>
 
 </html>

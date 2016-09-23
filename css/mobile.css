@@ -1,45 +1,69 @@
 #logo {
-    height: 2em;
+    height: 3em;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 p {
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Lato', sans-serif;
     color: #808080;
-    text-align: justify;
-}
-#graph {
-    display: none;
 }
 #content {
     overflow: hidden;
 }
 h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2em;
+    font-size: 1.5em;
     color: #E05038;
 }
 h2 {
     font-family: 'Lato', sans-serif;
-    font-size: 1.2em;
+    font-size: 2em;
     color: #E05038;
-    text-align: justify;
 }
 body {
     background: #FEFCFB;
-    padding: 44px;
+    padding: 3em;
 }
+#textbox {
+  text-align: center;
+}
+
 .socialBtn {
     height: 1.8em;
     padding-right: 10px;
-    opacity: 1;
+    opacity: 0.6;
+}
+.socialBtn:hover {
+  opacity: 1;
 }
 a, a:visited {
   text-decoration: none;
   color: #E05038;
 }
-#logo, #title, #text, #social {
-  display: none;
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 3px;
+    transition: 0.2s;
+    width: 85%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+    padding: 2px 16px;
+}
+.hl {
+  font-weight: bold;
+  color: #E05038;
+}
+.secondCard {
+  padding-top: 1em;
 }
