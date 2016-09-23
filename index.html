@@ -15,6 +15,7 @@
     <link rel="stylesheet" media="only screen and (min-width: 501px)" href="css/style.css">
 
     <!-- JavaScript Libraries -->
+    <script type="text/javascript" src="js/scrolloverflow.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
     <script type="text/javascript" src="js/ganalytic.js"></script>
@@ -37,7 +38,8 @@
     <script type="text/javascript">
       $(document).ready(function() {
         $('#fullpage').fullpage({
-          verticalCentered: false
+          verticalCentered: false,
+          scrollOverflow: true
         });
       });
     </script>
