@@ -20,6 +20,7 @@
     <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
     <script type="text/javascript" src="js/ganalytic.js"></script>
     <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+    <script src="js/galleria-1.4.7.min.js"></script>
 
     <!-- Favicon Configuration -->
     <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
@@ -36,83 +37,103 @@
 
     <!-- -->
     <script type="text/javascript">
-      $(document).ready(function() {
-        $('#fullpage').fullpage({
-          verticalCentered: false,
-          scrollOverflow: true
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                verticalCentered: false,
+                scrollOverflow: true
+            });
         });
-      });
     </script>
 </head>
 
 <body>
 
-<script async src='https://pepper.swat.io/embed.js?eyJwb3NpdGlvbiI6InJpZ2h0IiwiY29sb3IiOiJGNjcyODAiLCJpY29uIjoiZW1haWwiLCJwcm9ub3VuIjoibWUiLCJpbnRyb1RleHQiOiJDb21wdXRlciBzY2llbmNlIHN0dWRlbnQgYXQgdGhlIFZVQiBpbiBCcnVzc2VscywgQmVsZ2l1bS4iLCJjaGFubmVscyI6W1sidHdpdHRlciIsInB2ZHNwIiwic29jaWFsIl0sWyJpbnN0YWdyYW0iLCJwdmRzcGllZyIsInNvY2lhbCJdLFsiZ2l0aHViIiwiZ2l0aHViLmNvbS9wdmRzcCIsInNvY2lhbCJdLFsiZW1haWwiLCJwYXRyaWNrQHB2ZHNwLmJlIiwiY2xhc3NpYyJdLFsid2Vic2l0ZSIsInB2ZHNwLmJlIiwiY2xhc3NpYyJdXX0='></script>
+    <script async src='https://pepper.swat.io/embed.js?eyJwb3NpdGlvbiI6InJpZ2h0IiwiY29sb3IiOiJGNjcyODAiLCJpY29uIjoiZW1haWwiLCJwcm9ub3VuIjoibWUiLCJpbnRyb1RleHQiOiJDb21wdXRlciBzY2llbmNlIHN0dWRlbnQgYXQgdGhlIFZVQiBpbiBCcnVzc2VscywgQmVsZ2l1bS4iLCJjaGFubmVscyI6W1sidHdpdHRlciIsInB2ZHNwIiwic29jaWFsIl0sWyJpbnN0YWdyYW0iLCJwdmRzcGllZyIsInNvY2lhbCJdLFsiZ2l0aHViIiwiZ2l0aHViLmNvbS9wdmRzcCIsInNvY2lhbCJdLFsiZW1haWwiLCJwYXRyaWNrQHB2ZHNwLmJlIiwiY2xhc3NpYyJdLFsid2Vic2l0ZSIsInB2ZHNwLmJlIiwiY2xhc3NpYyJdXX0='></script>
 
-  <div id="fullpage">
-    <div class="section">
-    <img src="img/logo.png" id="logo"></img>
-
-    <div id="textbox">
-
-        <h1>Patrick Van der Spiegel</h1>
-
-        <center>
-            <div id="firstCard"/>
-            <div class="card">
-                <div class="container">
-                    <p>Hi there!</p>
-                    <p>My name is Patrick Van der Spiegel, a second year Computer Science student at the VUB in Brussels, Belgium. My interests are programming and computer science, art, design and cinema. Read my film reviews on <a href="http://letterboxd.com/pvdsp/">Letterboxd</a>                        or read my posts on <a href="https://www.reddit.com/user/pvdsp">Reddit</a>.</p>
+    <div id="fullpage">
+        <div class="section">
+            <img src="img/logo.png" id="logo" />
+            <h1 class="title">Patrick Van der Spiegel</h1>
+            <center>
+                <div id="firstCard"></div>
+                <div class="card">
+                    <div class="container">
+                        <p>Hi there!</p>
+                        <p>My name is Patrick Van der Spiegel, a second year Computer Science student at the VUB in Brussels, Belgium. My interests are programming and computer science, art, design and cinema. Read my film reviews on <a href="http://letterboxd.com/pvdsp/">Letterboxd</a>                            or read my posts on <a href="https://www.reddit.com/user/pvdsp">Reddit</a>.</p>
+                    </div>
                 </div>
+
+                <div class="secondCard"></div>
+                <div class="card">
+                    <div class="container">
+                        <p><b>2009 — 2015</b>: Industriële Wetenschappen — Don Bosco Halle
+                            <br>
+                            <b>Since 2015</b>: Bachelor of Science in Computer Science — Vrije Universiteit Brussel</p>
+                    </div>
+                </div>
+
+                <div class="secondCard"></div>
+                <div class="card">
+                    <div class="container">
+                        <p class="hl">Programming languages:</p>
+                        <p>
+                            Racket
+                            <br> Javascript
+                            <br> HTML / CSS
+                            </ul>
+                    </div>
+                </div>
+            </center>
+        </div>
+
+        <div class="section">
+            <img src="img/logo.png" id="logo"></img>
+            <h1 class="title">Projects</h1>
+            <center>
+                <div class="secondCard"></div>
+                <div class="card">
+                    <div class="container">
+                        <p><b>Space Invaders</b> — Racket<br>
+                            <b>Personal Website</b> — HTML / CSS<br>
+                            <b>Slack Statistics</b> — Javascript<br>
+                            <b>Computer Build</b> — GTX 1070 | i5-6600k</p>
+                    </div>
+                </div>
+            </center>
+        </div>
+
+        <div class="section">
+            <img src="img/logo.png" id="logo"></img>
+            <h1 class="title"><b>Space Invaders</b> — Racket</h1>
+            <div class="projectDesc">
+                <p>Space Invaders was my first real programming project, as an assignment for my bachelor degree in Computer Science.</br>
+                    This interpretation of the classic video game is entirely written in Racket, a language in the Lisp-Scheme family.</p>
+                <center>
+                    <div id="firstCard"></div>
+                    <div class="galleria">
+                        <img src="img/projects/spaceinv/01.png">
+                        <img src="img/projects/spaceinv/02.png">
+                        <img src="img/projects/spaceinv/03.png">
+                        <img src="img/projects/spaceinv/04.png">
+                        <img src="img/projects/spaceinv/05.png">
+                    </div>
+                </center>
+                <script>
+                    (function() {
+                        Galleria.loadTheme('https://cdnjs.cloudflare.com/ajax/libs/galleria/1.4.5/themes/classic/galleria.classic.min.js');
+                        Galleria.run('.galleria');
+                    }());
+                </script>
             </div>
-    </div>
-
-    <div class="secondCard"/>
-    <div class="card">
-        <div class="container">
-            <p><b>2009 — 2015</b>: Industriële Wetenschappen — Don Bosco Halle
-                <br>
-                <b>Since 2015</b>: Bachelor of Science in Computer Science — Vrije Universiteit Brussel</p>
         </div>
-    </div>
-    </div>
 
-    <div class="secondCard"/>
-    <div class="card">
-        <div class="container">
-            <p class="hl">Programming languages:</p>
-            <p>
-                Racket
-                <br> Javascript
-                <br> HTML / CSS
-                </ul>
+        <div class="section">
+            <img src="img/logo.png" id="logo"></img>
+            <h1 class="title">Computer Build</h1>
+            <div class="projectDesc"></div>
         </div>
-    </div>
-    </div>
-    </center>
-    </div>
-  </div>
 
-  <div class="section">
-    <img src="img/logo.png" id="logo"></img>
-    <div id="textbox">
-
-    <h1>Projects</h1>
-    <center>
-    <div class="secondCard"/>
-    <div class="card">
-        <div class="container">
-            <p><b>Space Invaders</b> — Racket<br>
-            <b>Personal Website</b> — HTML / CSS<br>
-            <b>Slack Statistics</b> — Javascript<br>
-            <b>Computer Build</b> — GTX 1070 | i5-6600k</p>
-        </div>
     </div>
-  </center>
-    </div>
-  </div>
-  </div>
-</div>
 </body>
 
 </html>
