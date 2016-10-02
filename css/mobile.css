@@ -5,8 +5,8 @@
     margin-top: 2em;
 }
 p {
-    font-size: 16px;
-    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
     color: #808080;
 }
 #content {
@@ -78,4 +78,7 @@ a, a:visited {
  }
  .title {
      text-align: center;
+ }
+ #scroll {
+   opacity: 0.4;
  }

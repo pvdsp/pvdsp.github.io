@@ -10,7 +10,7 @@
 
 p {
     font-size: 18px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     color: #808080;
 }
 
@@ -79,3 +79,6 @@ a, a:visited {
    width: 599px;
    height: 441px;
  }
+#scroll {
+  opacity: 0.4;
+}

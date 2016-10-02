@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Fonts & CSS -->
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:700|Lato">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:700|Source+Sans+Pro">
     <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
     <link rel="stylesheet" media="only screen and (max-width: 500px)" href="css/mobile.css" />
     <link rel="stylesheet" media="only screen and (min-width: 501px)" href="css/style.css">
@@ -48,18 +48,17 @@
 
 <body>
 
-    <script async src='https://pepper.swat.io/embed.js?eyJwb3NpdGlvbiI6InJpZ2h0IiwiY29sb3IiOiJGNjcyODAiLCJpY29uIjoiZW1haWwiLCJwcm9ub3VuIjoibWUiLCJpbnRyb1RleHQiOiJDb21wdXRlciBzY2llbmNlIHN0dWRlbnQgYXQgdGhlIFZVQiBpbiBCcnVzc2VscywgQmVsZ2l1bS4iLCJjaGFubmVscyI6W1sidHdpdHRlciIsInB2ZHNwIiwic29jaWFsIl0sWyJpbnN0YWdyYW0iLCJwdmRzcGllZyIsInNvY2lhbCJdLFsiZ2l0aHViIiwiZ2l0aHViLmNvbS9wdmRzcCIsInNvY2lhbCJdLFsiZW1haWwiLCJwYXRyaWNrQHB2ZHNwLmJlIiwiY2xhc3NpYyJdLFsid2Vic2l0ZSIsInB2ZHNwLmJlIiwiY2xhc3NpYyJdXX0='></script>
+    <script async src='https://pepper.swat.io/embed.js?eyJwb3NpdGlvbiI6InJpZ2h0IiwiY29sb3IiOiJGNjcyODAiLCJjdXN0b21Db2xvciI6ZmFsc2UsImljb24iOiJlbWFpbCIsInByb25vdW4iOiJtZSIsImxhbmd1YWdlIjoiZW4iLCJicmFuZGVkIjpmYWxzZSwiaW50cm9UZXh0IjoiQ29tcHV0ZXIgc2NpZW5jZSBzdHVkZW50IGF0IHRoZSBWVUIgaW4gQnJ1c3NlbHMsIEJlbGdpdW0uIiwiY2hhbm5lbHMiOltbInR3aXR0ZXIiLCJwdmRzcCIsInNvY2lhbCJdLFsiaW5zdGFncmFtIiwicHZkc3BpZWciLCJzb2NpYWwiXSxbImdpdGh1YiIsImdpdGh1Yi5jb20vcHZkc3AiLCJzb2NpYWwiXSxbImVtYWlsIiwicGF0cmlja0BwdmRzcC5iZSIsImNsYXNzaWMiXSxbIndlYnNpdGUiLCJwdmRzcC5iZSIsImNsYXNzaWMiXV19'></script>
 
     <div id="fullpage">
         <div class="section">
-            <img src="img/logo.png" id="logo" />
+            <a href="index.html"><img src="img/logo.png" id="logo"></img></a>
             <h1 class="title">Patrick Van der Spiegel</h1>
             <center>
                 <div id="firstCard"></div>
                 <div class="card">
                     <div class="container">
-                        <p>Hi there!</p>
-                        <p>My name is Patrick Van der Spiegel, a second year Computer Science student at the VUB in Brussels, Belgium. My interests are programming and computer science, art, design and cinema. Read my film reviews on <a href="http://letterboxd.com/pvdsp/">Letterboxd</a>                            or read my posts on <a href="https://www.reddit.com/user/pvdsp">Reddit</a>.</p>
+                        <p>My name is Patrick Van der Spiegel, a second year Computer Science student at the VUB in Brussels, Belgium. My interests are programming and computer science, art, design and cinema. Read my film reviews on <a href="http://letterboxd.com/pvdsp/" target="_blank">Letterboxd</a> or read my posts on <a href="https://www.reddit.com/user/pvdsp" target="_blank">Reddit</a>.</p>
                     </div>
                 </div>
 
@@ -75,19 +74,24 @@
                 <div class="secondCard"></div>
                 <div class="card">
                     <div class="container">
-                        <p class="hl">Programming languages:</p>
+                        <p class="hl">Known programming languages:</p>
                         <p>
-                            Racket
+                            Scheme / Racket
                             <br> Javascript
                             <br> HTML / CSS
                             </ul>
                     </div>
                 </div>
+
+                <div class="secondCard"></div>
+                <p id="scroll">(Scroll down for more information)</p>
+
             </center>
         </div>
 
-        <div class="section">
-            <img src="img/logo.png" id="logo"></img>
+        <div class="section" id="home">
+            <a href="index.html"><img src="img/logo.png" id="logo"></img>
+            </a>
             <h1 class="title">Projects</h1>
             <center>
                 <div class="secondCard"></div>
@@ -103,19 +107,20 @@
         </div>
 
         <div class="section">
-            <img src="img/logo.png" id="logo"></img>
+            <a href="index.html"><img src="img/logo.png" id="logo"></img>
+            </a>
             <h1 class="title"><b>Space Invaders</b> — Racket</h1>
             <div class="projectDesc">
-                <p>Space Invaders was my first real programming project, as an assignment for my bachelor degree in Computer Science.</br>
+                <p>Space Invaders was my first real programming project, an assignment for my first year in computer science.</br>
                     This interpretation of the classic video game is entirely written in Racket, a language in the Lisp-Scheme family.</p>
                 <center>
-                    <div id="firstCard"></div>
+                    <div class="secondCard"></div>
                     <div class="galleria">
-                        <img src="img/projects/spaceinv/01.png">
-                        <img src="img/projects/spaceinv/02.png">
-                        <img src="img/projects/spaceinv/03.png">
-                        <img src="img/projects/spaceinv/04.png">
-                        <img src="img/projects/spaceinv/05.png">
+                        <img src="img/projects/spaceinv/01.png" />
+                        <img src="img/projects/spaceinv/02.png" />
+                        <img src="img/projects/spaceinv/03.png" />
+                        <img src="img/projects/spaceinv/04.png" />
+                        <img src="img/projects/spaceinv/05.png" />
                     </div>
                 </center>
                 <script>
@@ -128,9 +133,31 @@
         </div>
 
         <div class="section">
-            <img src="img/logo.png" id="logo"></img>
+            <a href="index.html"><img src="img/logo.png" id="logo"></img>
+            </a>
             <h1 class="title">Computer Build</h1>
-            <div class="projectDesc"></div>
+            <div class="projectDesc">
+                <p>My first computer build, made with <a href="https://denstieven.com/" target="_blank">Steven Denys</a> and <a href="http://wietsedb.com/" target="_blank">Wietse De Braekeleer</a>.<br> You can find photos of the building process <a href="https://denstieven.com/home#/photography/album/patrick_pc/" target="_blank">here</a>.</p>
+                <center>
+                    <div class="secondCard"></div>
+                    <div class="card">
+                        <div class="container">
+                            <p><b>RAM</b> — HyperX Fury - DDR4 2133Mhz CL14 Kit Black: 8GB<br>
+
+                                <b>GPU</b> — EVGA GeForce GTX 1070 SC GAMING ACX 3.0<br>
+                                <b>SSD</b> — Kingston Technology SSDNow V300: 120GB<br>
+                                <b>Power Supply</b> — Seasonic M12II Series EVO: 520W<br>
+                                <b>Motherboard</b> — MSI Z170M Mortar<br>
+                                <b>Case</b> — Cooltek JB-UMX3 Window<br>
+                                <b>HDD</b> — Western digital Blue: 1TB<br>
+                                <b>Cooler</b> — be quiet! Pure Rock<br>
+                                <b>CPU</b> — Intel Core i5 6600K</p>
+
+
+                        </div>
+                    </div>
+                </center>
+            </div>
         </div>
 
     </div>
