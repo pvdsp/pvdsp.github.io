@@ -82,3 +82,7 @@ a, a:visited {
  #scroll {
    opacity: 0.4;
  }
+::selection {
+    background-color: #FF7D6E;
+    color: #fff;
+}
