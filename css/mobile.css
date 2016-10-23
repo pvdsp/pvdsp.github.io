@@ -86,3 +86,12 @@ a, a:visited {
     background-color: #FF7D6E;
     color: #fff;
 }
+.screenshot {
+    border: #FF7D6E 2px dotted;
+    height: 35%;
+    left: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+}

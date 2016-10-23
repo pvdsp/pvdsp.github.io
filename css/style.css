@@ -82,8 +82,16 @@ a, a:visited {
 #scroll {
   opacity: 0.4;
 }
-
 ::selection {
     background-color: #FF7D6E;
     color: #fff;
+}
+.screenshot {
+    border: #FF7D6E 2px dotted;
+    height: 50%;
+    left: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
 }
