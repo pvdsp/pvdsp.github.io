@@ -94,13 +94,8 @@ a, a:visited {
     text-align: center;
 }
 
-.galleria {
-    width: 599px;
-    height: 441px;
-}
-
 #scroll {
-    opacity: 0.4;
+  opacity: 0.4;
 }
 
 ::selection {
@@ -115,4 +110,10 @@ a, a:visited {
     margin-left: auto;
     margin-right: auto;
     margin-top: 2em;
+}
+
+#labels {
+    margin-left: auto;
+    margin-right: auto;
+    width: 228px;
 }
