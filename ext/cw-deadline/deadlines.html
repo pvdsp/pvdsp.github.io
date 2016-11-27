@@ -23,8 +23,8 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Object Oriented Software Development: Project</td>
+                <tr class="success">
+                    <td>Object Oriented: Project Modelleren</td>
                     <td>November 28, 2016</td>
                     <td id="deadline-OO"></td>
                 </tr>
@@ -63,14 +63,32 @@
     </div>
 
     <script type="text/javascript">
+
+        var now = new Date();
+        var dl_OO = new Date("November 28, 2016 00:00:00");
+        var dl_Cs = new Date("January 8, 2017 00:00:00");
+        var dl_Algo2_1 = new Date("January 15, 2017 00:00:00");
+        var dl_Scp2_2 = new Date("December 16, 2016 16:00:00");
+        var dl_pp_d1 = new Date("January 17, 2017 00:00:00");
+        var dl_pp_d2 = new Date("May 30, 2017 00:00:00");
+        var dl_pp_tv = new Date("March 28, 2017 00:00:00");
+
+        function postData(deadline, id) {
+          if (now < deadline) {
+            document.getElementById(id).innerHTML = countdown(null, deadline);
+          } else {
+            document.getElementById(id).innerHTML = "Deadline passed"
+          }
+        };
+
         setInterval(function() {
-            document.getElementById("deadline-OO").innerHTML = countdown(null, new Date("November 28, 2016 00:00:00"));
-            document.getElementById("deadline-cs").innerHTML = countdown(null, new Date("January 8, 2017 00:00:00"));
-            document.getElementById("deadline-algo-taak1").innerHTML = countdown(null, new Date("January 15, 2017 00:00:00"));
-            document.getElementById("deadline-scp2-t2").innerHTML = countdown(null, new Date("December 16, 2016 16:00:00"));
-            document.getElementById("deadline-pp-d1").innerHTML = countdown(null, new Date("January 17, 2017 00:00:00"));
-            document.getElementById("deadline-pp-d2").innerHTML = countdown(null, new Date("May 30, 2017 00:00:00"));
-            document.getElementById("deadline-pp-tv").innerHTML = countdown(null, new Date("March 28, 2017 00:00:00"));
+            postData(dl_OO, "deadline-OO");
+            postData(dl_Cs, "deadline-cs")
+            postData(dl_Algo2_1 , "deadline-algo-taak1");
+            postData(dl_Scp2_2 , "deadline-scp2-t2");
+            postData(dl_pp_d1 , "deadline-pp-d1");
+            postData(dl_pp_d2 , "deadline-pp-d2");
+            postData(dl_pp_tv , "deadline-pp-tv");
         }, 1000);
     </script>
 
