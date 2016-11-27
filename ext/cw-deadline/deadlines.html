@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <meta name="author" content="pvdsp">
+    <meta name="description" content="Deadline voor projecten bachelor CW">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countdown/2.6.0/countdown.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Maitree:300" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <div id="counters">
+        <p id="deadline-counter-OO"></p>
+    </div>
+
+    <script type="text/javascript">
+        setInterval(function() {
+            document.getElementById("deadline-counter-OO").innerHTML = countdown(null, new Date("November 28, 2016 00:00:00"));
+        }, 1000);
+    </script>
+
+</body>
+
+</html>
