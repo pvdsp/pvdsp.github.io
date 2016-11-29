@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <title>Deadlines CW</title>
     <meta name="author" content="pvdsp">
-    <meta name="description" content="Deadline voor taken en projecten CW">
+    <meta name="description" content="Deadline voor taken en projecten Computerwetenschappen">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/countdown/2.6.0/countdown.min.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Maitree:300" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 </head>
 
 <body>
@@ -23,7 +23,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr class="success">
+                <tr class="danger">
                     <td>Object Oriented: Project Modelleren</td>
                     <td>November 28, 2016</td>
                     <td id="deadline-OO"></td>
@@ -37,6 +37,11 @@
                     <td>Computersystemen: Project</td>
                     <td>January 8, 2017</td>
                     <td id="deadline-cs"></td>
+                </tr>
+		<tr>
+                    <td>Object Oriented: Project Scala</td>
+                    <td>January 9, 2017</td>
+                    <td id="deadline-OO-scala"></td>
                 </tr>
                 <tr>
                     <td>Algoritmen & Datastructuren II: Taak 1</td>
@@ -72,6 +77,8 @@
         var dl_pp_d1 = new Date("January 17, 2017 00:00:00");
         var dl_pp_d2 = new Date("May 30, 2017 00:00:00");
         var dl_pp_tv = new Date("March 28, 2017 00:00:00");
+        var dl_OO_scala = new Date("January 9, 2017 00:00:00");
+
 
         function postData(deadline, id) {
           if (now < deadline) {
@@ -83,12 +90,13 @@
 
         setInterval(function() {
             postData(dl_OO, "deadline-OO");
-            postData(dl_Cs, "deadline-cs")
+            postData(dl_Cs, "deadline-cs");
             postData(dl_Algo2_1 , "deadline-algo-taak1");
             postData(dl_Scp2_2 , "deadline-scp2-t2");
             postData(dl_pp_d1 , "deadline-pp-d1");
             postData(dl_pp_d2 , "deadline-pp-d2");
             postData(dl_pp_tv , "deadline-pp-tv");
+            postData(dl_OO_scala , "deadline-OO-scala");
         }, 1000);
     </script>
 

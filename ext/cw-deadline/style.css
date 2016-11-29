@@ -1,4 +1,6 @@
-#counters {
-    font-family: 'Maitree', serif;
-    text-align: center;
+th, td {
+    font-family: 'Source Sans Pro', serif;
+}
+body {
+    background: #FEFCFB !important;
 }
