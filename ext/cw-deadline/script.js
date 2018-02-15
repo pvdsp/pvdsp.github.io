@@ -32,9 +32,15 @@ function postData(deadline) {
 
 // Initialising the page
 function init() {
+    var monthNames = ["January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"];
     for (var i = 0; i < deadlines.length; i++) {
         var deadline = deadlines[i];
-        document.getElementById("deadlines").innerHTML += template({title: deadline.title, date: deadline.date});
+        var date = deadline.date;
+        document.getElementById("deadlines").innerHTML += template({
+            title: deadline.title,
+            date: monthNames[date.getMonth()] + " " + date.getDate() + ", " + date.getFullYear()
+        });
     }
     setInterval(function () {
         deadlines.forEach(function (deadline) {
