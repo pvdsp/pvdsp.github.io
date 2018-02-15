@@ -24,60 +24,23 @@
                     <th>Countdown</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td>SCP2: Taak 2</td>
-                    <td>December 16, 2016</td>
-                    <td id="deadline-scp2-t2"></td>
-                </tr>
-                <tr>
-                    <td>Computersystemen: Project</td>
-                    <td>January 9, 2017</td>
-                    <td id="deadline-cs"></td>
-                </tr>
-		            <tr>
-                    <td>Object Oriented: Project Scala</td>
-                    <td>January 10, 2017</td>
-                    <td id="deadline-OO-scala"></td>
-                </tr>
-                <tr>
-                    <td>SCP2: Snake</td>
-                    <td>January 16, 2017</td>
-                    <td id="deadline-scp2-snake"></td>
-                </tr>
-                <tr>
-                    <td>Programmeerproject: Deel 1</td>
-                    <td>January 17, 2017</td>
-                    <td id="deadline-pp-d1"></td>
-                </tr>
-                <tr>
-                    <td>Algoritmen & Datastructuren II: Taak 1</td>
-                    <td>February 12, 2017</td>
-                    <td id="deadline-algo-taak1"></td>
-                </tr>
-                <tr>
-                    <td>Programmeerproject: Verslag</td>
-                    <td>March 28, 2017</td>
-                    <td id="deadline-pp-tv"></td>
-                </tr>
-                <tr>
-                    <td>Programmeerproject: Deel 2</td>
-                    <td>May 30, 2017</td>
-                    <td id="deadline-pp-d2"></td>
-                </tr>
-                <tr>
-                    <td>Algoritmen & Datastructuren II: Taak 2</td>
-                    <td>June 9, 2017</td>
-                    <td id="deadline-algo-taak2"></td>
-                </tr>
+            <tbody id="deadlines">
+                <script id="entry-template" type="text/x-handlebars-template">
+                    <tr>
+                        <td>{{title}}</td>
+                        <td>{{date}}</td>
+                        <td id="{{safeId title}}"></td>
+                    </tr>
+                </script>
             </tbody>
         </table>
     </div>
 
     <!-- scripts, page bottom improves load times -->
+    <script>var safeId = function (string) { return string.replace(" ", "-") };</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/countdown/2.6.0/countdown.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
-    <script>Handlebars.registerHelper("safeId", function (string) { return string.replace(" ", "-") });</script>
+    <script>Handlebars.registerHelper("safeId", safeId);</script>
     <script src="script.js"></script>
 
 </body>
