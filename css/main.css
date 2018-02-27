@@ -1,0 +1,78 @@
+html, body {
+  background: #FEFCFB;
+  height: 99%;
+  width: 99%;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h3 {
+  font-family: Raleway;
+  color: #EA6844;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-size: 0.95rem;
+}
+
+p {
+  font-family: Source Sans Pro;
+  font-size: 0.9rem;
+  color: #3F484D;
+}
+
+div.contents {
+  margin-top: -0.9rem;
+  padding-top: 0;
+}
+
+#logo {
+  height: 3rem;
+  padding: 2.5rem;
+  opacity: 0.4;
+}
+
+#p-picture {
+  height: 25rem;
+  display: inline-block;
+  vertical-align: middle;
+
+  background: rgba(39,62,84,0.82);
+  overflow: hidden;
+  z-index: 2;
+}
+
+#info {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0.8rem;
+}
+
+#card {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+
+  padding: 0.6rem;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  transition: 0.1s;
+}
+
+#card:hover {
+    box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 800px) {
+    #p-picture, #logo {
+      visibility: hidden;
+    }
+
+}

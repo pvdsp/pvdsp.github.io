@@ -1,163 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+      <!-- Meta Data -->
+      <meta charset="utf-8">
+      <meta name="description" content="Personal website">
+      <meta name="author" content="Patrick Van der Spiegel">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
-    <!-- Meta Data -->
-    <meta charset="utf-8">
-    <meta name="description" content="Personal website">
-    <meta name="author" content="Patrick Van der Spiegel">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Fonts & CSS -->
+      <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:900|Source+Sans+Pro" />
+      <link rel="stylesheet" media="screen and (min-width: 800px)" href="css/main.css" />
+      <link rel="stylesheet" media="screen and (max-width: 800px)" href="css/mobile.css" />
 
-    <!-- Fonts & CSS -->
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:700|Source+Sans+Pro">
-    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-    <link rel="stylesheet" media="only screen and (max-width: 850px)" href="css/mobile.css" />
-    <link rel="stylesheet" media="only screen and (min-width: 851px)" href="css/style.css">
+      <!-- Favicon Configuration -->
+      <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
+      <link rel="icon" type="image/png" href="/img/favicons/favicon-32x32.png" sizes="32x32">
+      <link rel="icon" type="image/png" href="/img/favicons/favicon-16x16.png" sizes="16x16">
+      <link rel="manifest" href="/img/favicons/manifest.json">
+      <link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+      <link rel="shortcut icon" href="/img/favicons/favicon.ico">
 
-    <!-- JavaScript Libraries -->
-    <script type="text/javascript" src="js/scrolloverflow.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-    <script type="text/javascript" src="js/ganalytic.js"></script>
-    <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
-    <script src="js/galleria-1.4.7.min.js"></script>
+      <!-- Meta -->
+      <meta name="keywords" content="personal,website,portfolio,business,contact">
+      <meta name="msapplication-config" content="/img/favicons/browserconfig.xml">
+      <meta name="theme-color" content="#e05038">
 
-    <!-- Favicon Configuration -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="/img/favicons/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/img/favicons/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="/img/favicons/manifest.json">
-    <link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="/img/favicons/favicon.ico">
-    <meta name="msapplication-config" content="/img/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#e05038">
+      <!-- pepper.swat.io !-->
+      <script async src='https://pepper.swat.io/embed.js?eyJwb3NpdGlvbiI6InJpZ2h0IiwiY29sb3IiOiJkNGQzZDIiLCJjdXN0b21Db2xvciI6dHJ1ZSwiaWNvbiI6Imdsb2JlIiwicHJvbm91biI6Im1lIiwibGFuZ3VhZ2UiOiJlbiIsImJyYW5kZWQiOmZhbHNlLCJpbnRyb1RleHQiOm51bGwsImNoYW5uZWxzIjpbWyJpbnN0YWdyYW0iLCJwdmRzcCIsInNvY2lhbCJdLFsidHdpdHRlciIsInB2ZHNwaWVnIiwic29jaWFsIl0sWyJnaXRodWIiLCJodHRwczovL2dpdGh1Yi5jb20vcHZkc3AiLCJzb2NpYWwiXSxbImVtYWlsIiwicGF0cmlja0BwdmRzcC5iZSIsImNsYXNzaWMiXV19'></script>
 
-    <!-- Page Title -->
-    <title>Patrick Van der Spiegel</title>
+      <!-- Page Title -->
+      <title>Patrick A. Van der Spiegel</title>
+  </head>
 
-    <!-- -->
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#fullpage').fullpage({
-                verticalCentered: false,
-                scrollOverflow: true
-            });
-        });
-    </script>
-</head>
+  <body>
+      <img src="img/gray-logo.png" id="logo" alt="Logo">
+      <div id="card">
+        <img src="img/profile-picture.jpg" id="p-picture" alt="Profile Picture">
+        <div id="info">
+          <h1>Patrick A. Van der Spiegel</h1>
 
-<body>
-    <script async src='https://pepper.swat.io/embed.js?eyJwb3NpdGlvbiI6InJpZ2h0IiwiY29sb3IiOiJlMDUwMzgiLCJjdXN0b21Db2xvciI6dHJ1ZSwiaWNvbiI6Imdsb2JlIiwicHJvbm91biI6Im1lIiwibGFuZ3VhZ2UiOiJlbiIsImJyYW5kZWQiOmZhbHNlLCJpbnRyb1RleHQiOiJDb21wdXRlciBzY2llbmNlIHN0dWRlbnQgYXQgdGhlIFZyaWplIFVuaXZlcnNpdGVpdCBCcnVzc2VsLiIsImNoYW5uZWxzIjpbWyJnaXRodWIiLCJnaXRodWIuY29tL3B2ZHNwIiwic29jaWFsIl0sWyJ0d2l0dGVyIiwicHZkc3BpZWciLCJzb2NpYWwiXSxbIm1lZGl1bSIsInB2ZHNwIiwic29jaWFsIl0sWyJpbnN0YWdyYW0iLCJwdmRzcGllZyIsInNvY2lhbCJdLFsiZW1haWwiLCJwYXRyaWNrQHB2ZHNwLmJlIiwiY2xhc3NpYyJdXX0='></script>
-    <div id="fullpage">
-        <div class="section">
-            <a href="index.html"><img src="img/logo.png" id="logo" />
-            </a>
-            <h1 class="title">Patrick Van der Spiegel</h1>
-            <center>
-                <div id="firstCard"></div>
-                <div class="card">
-                    <div class="container">
-                        <p>I am a second year computer science student at the Vrije Universiteit Brussel in Belgium. My interests are computer science, art and cinema. I write film reviews on <a href="http://letterboxd.com/pvdsp/"
-                                target="_blank">Letterboxd</a>.</p>
-                    </div>
-                </div>
+          <h3>Bio</h3>
+          <div class="contents"><p>Computer science student at the <i>Vrije Universiteit Brussel</i>. <br />
+          Passionate about artificial intelligence, computer vision, art and cinema.</p></div>
 
-                <div class="secondCard"></div>
-                <div class="card">
-                    <div class="container">
-						<p class="hl">Education and experience:</p>
-                        <p><b>2009 — 2015</b>: Industriële Wetenschappen — Don Bosco Halle
-                            <br />
-                            <b>Since 2015</b>: Bachelor of Science in Computer Science — Vrije Universiteit Brussel</p>
-                    </div>
-                </div>
+          <h3>Education</h3>
+          <div class="contents"><p><b>2009 — 2015</b>: Industriële Wetenschappen — <i>Don Bosco Halle</i> <br />
+            <b>Since 2015</b>: Bachelor of Science in Computer Science — <i>Vrije Universiteit Brussel</i></p></div>
 
-                <div class="secondCard"></div>
-                <div class="card">
-                    <div class="container">
-                        <p class="hl">Programming languages:</p>
-                        <p>
-                            Scheme / Racket
-                            <br /> Python
-                            <br /> C
-                        </p>
-                    </div>
-                </div>
-                <div class="secondCard"></div>
-                <p id="scroll">Scroll down for more information</p>
-            </center>
+          <h3>Experience</h3>
+          <div class="contents"><p><b>Summer of 2014</b>: IT Help — <i>Tweddle Litho of Europe</i></p></div>
         </div>
-
-        <div class="section" id="spaceInvDesc">
-            <div id="top">
-                <a href="index.html"><img src="img/gray-logo.png" id="logo" />
-                </a>
-                <h1 class="title" id="spaceTitle"><b>Space Invaders</b> — Racket</h1>
-                <div class="projectDesc" id="spaceDesc">
-                    <p>Space Invaders was my first real programming project, an assignment for my first year in computer science.
-                        <br /> This interpretation of the classic video game is entirely written in Racket, a language in the Lisp-Scheme family.</p>
-                </div>
-            </div>
-            <div id="bottom"></div>
-        </div>
-
-        <div class="section">
-            <a href="index.html"><img src="img/logo.png" id="logo" />
-            </a>
-            <h1 class="title"><b>Slack Statistics</b> — Javascript</h1>
-            <div class="projectDesc">
-                <p>Slack Statistics is a small, open-source side project hosted on <a href="https://github.com/pvdsp/slack-statistics">Github</a>. <br/> With help from the Slack API, Slack Statistics is able to display the number of messages posted in your
-                    Slack team.</p>
-            </div>
-            <img src="img/projects/slack-statistics/stats-screenshot.png" class="screenshot"/>
-
-            <div id="labels">
-                <img src="https://img.shields.io/github/contributors/pvdsp/slack-statistics.svg"/>
-                <img src="https://img.shields.io/github/license/pvdsp/slack-statistics.svg"/>
-            </div>
-        </div>
-
-        <div class="section">
-            <a href="index.html"><img src="img/logo.png" id="logo" />
-            </a>
-            <h1 class="title">Computer Build</h1>
-            <div class="projectDesc">
-                <p>My first computer build, made with <a href="https://denstieven.com/" target="_blank">Steven Denys</a> and <a href="http://wietsedb.com/" target="_blank">Wietse De Braekeleer</a>.
-                    <br /> You can find photos of the building process <a href="https://denstieven.com/home#/photography/album/patrick_pc/" target="_blank">here</a>.</p>
-                <center>
-                    <div class="secondCard"></div>
-                    <div class="card">
-                        <div class="container">
-                            <p>
-                                <b>CPU</b> — Intel Core i5 6600K
-                                <br />
-                                <b>GPU</b> — EVGA GeForce GTX 1070 SC GAMING ACX 3.0
-                                <br />
-                                <b>Motherboard</b> — MSI Z170M Mortar
-                                <br />
-                            </p>
-                            <p>
-                                <b>RAM</b> — HyperX Fury - DDR4 2133Mhz CL14 Kit Black: 8GB
-                                <br />
-                                <b>Power Supply</b> — Seasonic M12II Series EVO: 520W
-                                <br />
-                                <b>SSD</b> — Kingston Technology SSDNow V300: 120GB
-                                <br />
-                                <b>HDD</b> — Western digital Blue: 1TB
-                                <br />
-                            </p>
-                            <p>
-                                <b>Case</b> — Cooltek JB-UMX3 Window
-                                <br />
-                                <b>Cooler</b> — be quiet! Pure Rock
-                                <br />
-                            </p>
-                        </div>
-                    </div>
-                </center>
-            </div>
-        </div>
-    </div>
-</body>
-
+      </div>
+  </body>
 </html>
