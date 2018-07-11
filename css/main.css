@@ -7,12 +7,12 @@ html, body {
 }
 
 h1, h3 {
-  font-family: Raleway;
+  font-family: Karla;
   color: #EA6844;
 }
 
 h1 {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
 }
 
 h3 {
@@ -36,16 +36,6 @@ div.contents {
   opacity: 0.4;
 }
 
-#p-picture {
-  height: 25rem;
-  display: inline-block;
-  vertical-align: middle;
-
-  background: rgba(39,62,84,0.82);
-  overflow: hidden;
-  z-index: 2;
-}
-
 #info {
   display: inline-block;
   vertical-align: top;
@@ -60,6 +50,7 @@ div.contents {
   transform: translate(-50%, -50%);
 
   padding: 0.6rem;
+  text-align: center;
 
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 2px;
@@ -70,9 +61,19 @@ div.contents {
     box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
 }
 
+.icons {
+  position: relative;
+}
+
+.icons a {
+  text-align: center;
+  color: #A9A9A9;
+  font-size: 1rem;
+  width: 10rem;
+}
+
 @media screen and (max-width: 800px) {
-    #p-picture, #logo {
+    #logo {
       visibility: hidden;
     }
-
 }
