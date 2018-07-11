@@ -70,6 +70,16 @@ div.contents {
   color: #A9A9A9;
   font-size: 1rem;
   width: 10rem;
+
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+
+a:hover {
+  color: #EA6844;
 }
 
 @media screen and (max-width: 800px) {
