@@ -8,6 +8,9 @@ html, body {
 
 h1, h3 {
   font-family: Karla;
+}
+
+h1, h3, a {
   color: #EA6844;
 }
 
