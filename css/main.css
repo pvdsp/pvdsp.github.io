@@ -33,12 +33,6 @@ div.contents {
   padding-top: 0;
 }
 
-#logo {
-  height: 0rem;
-  padding: 0rem;
-  visibility: hidden;
-}
-
 #info {
   display: inline-block;
   vertical-align: top;
@@ -67,12 +61,6 @@ a:hover {
 }
 
 @media screen and (min-width: 800px) {
-  #logo {
-    visibility: visible;
-    height: 3rem;
-    padding: 2.5rem;
-    opacity: 0.4;
-  }
 
   #card {
     position: absolute;
