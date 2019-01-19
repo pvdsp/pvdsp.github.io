@@ -9,9 +9,23 @@
 
       <!-- Fonts & CSS -->
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Karla:700|Source+Sans+Pro">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/brands.css" integrity="sha384-7xAnn7Zm3QC1jFjVc1A6v/toepoG3JXboQYzbM0jrPzou9OFXm/fY6Z/XiIebl/k" crossorigin="anonymous">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/fontawesome.css" integrity="sha384-ozJwkrqb90Oa3ZNb+yKFW2lToAWYdTiF1vt8JiH5ptTGHTGcN7qdoR1F95e0kYyG" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
       <link rel="stylesheet" href="css/main.css">
+
+      <!-- Processing -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js"></script>
+
+      <script type="text/javascript">
+      <!--
+          function toggle_visibility(id) {
+             var e = document.getElementById(id);
+             if(e.style.display == 'block')
+                e.style.display = 'none';
+             else
+                e.style.display = 'block';
+          }
+      //-->
+      </script>
 
       <!-- Favicon Configuration -->
       <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
@@ -32,9 +46,12 @@
 
   <body>
       <!-- <img src="img/gray-logo.png" id="logo" alt="Logo"> -->
+
       <div id="card">
         <div id="info">
           <h1>Patrick Van der Spiegel</h1>
+
+          <div id="tetris" style="display:none;"><canvas data-processing-sources="processing/tetris.pde"></canvas></div>
 
           <h3>Bio</h3>
           <div class="contents"><p>Computer science student at the <i>Vrije Universiteit Brussel</i>. <br />
@@ -59,6 +76,7 @@
             <a href="https://www.reddit.com/user/pvdsp" target="_blank"><i class="fab fa-reddit-alien"></i></a>
             <a href="https://twitter.com/pvdspieg" target="_blank"><i class="fab fa-twitter"></i></a>
             <a href="https://www.linkedin.com/in/patrick-a-van-der-spiegel-541041142/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" onclick="toggle_visibility('tetris');"><i class="fas fa-gamepad"></i></a>
           </div>
         </div>
       </div>
