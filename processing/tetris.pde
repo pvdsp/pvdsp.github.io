@@ -171,18 +171,20 @@ void keyPressed() {
   current.eraseShape();
   switch (keyCode) {
     case LEFT:
-      current.moveLeft();
+      if (!pause)
+        current.moveLeft();
       break;
     case RIGHT:
-      current.moveRight();
+      if (!pause)
+        current.moveRight();
       break;
     case DOWN:
-      frameRate(100);
+      if (!pause)
+        frameRate(100);
       break;
     case UP:
-      int x = current.x;
-      int y = current.y;
-      current = new Shape(x, y);
+      if (!pause)
+        current = new Shape(current.x, current.y);
       break;
     case 80:
       togglePause();
@@ -211,7 +213,6 @@ void setup() {
   background(#FEFCFB);
   noStroke();
   newShape();
-  frameRate(0);
 }
 
 void draw() {
