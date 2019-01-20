@@ -187,6 +187,14 @@ void keyPressed() {
   current.drawShape();
 }
 
+void mousePressed() {
+  current.eraseShape();
+  int x = current.x;
+  int y = current.y;
+  current = new Shape(x, y);
+  current.drawShape();
+}
+
 void setup() {
   frameRate(4);
   size(300, 510);
