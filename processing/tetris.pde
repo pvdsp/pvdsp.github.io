@@ -4,7 +4,7 @@ int width = 15;
 int height = 25;
 int blocksize = 20;
 
-int[][] grid = new int[width+1][height+1];
+int[][] grid = new int[width][height];
 boolean pause = true;
 Shape current;
 
@@ -35,16 +35,20 @@ class Block {
    }
  }
 
+ boolean checkLeft() {
+   return this.x > 0 && grid[x-1][y] != 1;
+ }
+
  void moveLeft() {
-   if (grid[x-1][y] != 1 && this.x > 1) {
-     this.x -= 1;
-   }
+   this.x -= 1;
+ }
+
+ boolean checkRight() {
+   return this.x < width-1 && grid[x+1][y] != 1;
  }
 
  void moveRight() {
-   if (grid[x+1][y] != 1 && this.x < width - 1) {
-     this.x += 1;
-   }
+   this.x += 1;
  }
 
  public Block(int x, int y, Shape owner) {
@@ -82,17 +86,39 @@ class Shape {
     }
   }
 
-  void moveLeft() {
-    current.x -= 1;
+  boolean checkLeft() {
     for (Block b : blocks) {
-      b.moveLeft();
+        if (!(b.checkLeft())) {
+          return false;
+        }
+    }
+    return true;
+  }
+
+  void moveLeft() {
+    if (checkLeft()) {
+      current.x -= 1;
+        for (Block b : blocks) {
+          b.moveLeft();
+        }
     }
   }
 
-  void moveRight() {
-    current.x += 1;
+  boolean checkRight() {
     for (Block b : blocks) {
-      b.moveRight();
+        if (!(b.checkRight())) {
+          return false;
+        }
+    }
+    return true;
+  }
+
+  void moveRight() {
+    if (checkRight()) {
+      current.x += 1;
+        for (Block b : blocks) {
+          b.moveRight();
+        }
     }
   }
 
@@ -208,8 +234,7 @@ void mousePressed() {
 }
 
 void setup() {
-  size(300, 510);
-  rectMode(CENTER);
+  size(300, 520);
   background(#FEFCFB);
   noStroke();
   newShape();
