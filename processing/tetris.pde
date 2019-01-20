@@ -5,6 +5,7 @@ int height = 25;
 int blocksize = 20;
 
 int[][] grid = new int[width+1][height+1];
+boolean pause = true;
 Shape current;
 
 class Block {
@@ -183,6 +184,9 @@ void keyPressed() {
       int y = current.y;
       current = new Shape(x, y);
       break;
+    case 80:
+      togglePause();
+      break;
   }
   current.drawShape();
 }
@@ -195,22 +199,34 @@ void mousePressed() {
   current.drawShape();
 }
 
+void togglePause() {
+  if (pause) {
+    pause = false;
+    frameRate(4);
+  } else {
+    pause = true;
+    frameRate(0.00001);
+  }
+}
+
 void setup() {
-  frameRate(4);
   size(300, 510);
   rectMode(CENTER);
   background(#FEFCFB);
   noStroke();
   newShape();
+  frameRate(0);
 }
 
 void draw() {
-  if (current.locked) {
-    frameRate(4);
-    newShape();
-  } else {
-    current.eraseShape();
-    current.moveDown();
-    current.drawShape();
+  if (!pause) {
+    if (current.locked) {
+      frameRate(4);
+      newShape();
+    } else {
+      current.eraseShape();
+      current.moveDown();
+      current.drawShape();
+    }
   }
 }
