@@ -201,6 +201,10 @@ void togglePause() {
   }
 }
 
+void mousePressed() {
+  togglePause();
+}
+
 void setup() {
   size(300, 510);
   rectMode(CENTER);
