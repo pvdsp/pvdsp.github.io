@@ -60,6 +60,11 @@ a:hover {
   color: #EA6844;
 }
 
+canvas {
+  outline: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0); /* mobile webkit */
+}
+
 @media screen and (min-width: 800px) {
 
   #card {
