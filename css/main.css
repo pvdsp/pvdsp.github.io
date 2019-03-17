@@ -15,28 +15,28 @@ h1, h3, a {
 }
 
 h1 {
-  font-size: 2.4rem;
+  font-size: 2.9rem;
 }
 
 h3 {
-  font-size: 0.95rem;
+  font-size: 1.2rem;
 }
 
 p {
   font-family: Source Sans Pro;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   color: #3F484D;
 }
 
 div.contents {
-  margin-top: -0.9rem;
+  margin-top: -1.0rem;
   padding-top: 0;
 }
 
 #info {
   display: inline-block;
   vertical-align: top;
-  padding: 0.8rem;
+  padding: 0.3rem;
 }
 
 #pf {
@@ -45,6 +45,10 @@ div.contents {
 
 .icons {
   position: relative;
+}
+
+.fab {
+  font-size: 1.3rem;
 }
 
 .icons a {
