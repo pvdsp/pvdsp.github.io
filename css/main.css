@@ -2,8 +2,6 @@ html, body {
   background: #FEFCFB;
   height: 99%;
   width: 99%;
-  margin: 0;
-  padding: 0;
 }
 
 h1, h3 {
@@ -19,12 +17,12 @@ h1 {
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 p {
   font-family: Source Sans Pro;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #3F484D;
 }
 
@@ -75,6 +73,14 @@ canvas {
 
 @media screen and (min-width: 800px) {
 
+  html, body {
+    background: #FEFCFB;
+    height: 99%;
+    width: 99%;
+    margin: 0;
+    padding: 0;
+  }
+
   #card {
     position: absolute;
     top: 45%;
@@ -92,6 +98,12 @@ canvas {
 
   #card:hover {
       /* box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2); */
+  }
+
+  p {
+      font-family: Source Sans Pro;
+      font-size: 1.1rem;
+      color: #3F484D;
   }
 
   .icons a {
