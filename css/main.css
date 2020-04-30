@@ -21,6 +21,20 @@ h1 {
         animation: fadein 3s;
 }
 
+#resume {
+  font-family: Karla;
+  font-size: 1rem;
+
+  margin-top: -0.1rem;
+  text-decoration: none;
+
+  -webkit-animation: fadein 4.5s; /* Safari, Chrome and Opera > 12.1 */
+   -moz-animation: fadein 4.5s;   /* Firefox < 16 */
+    -ms-animation: fadein 4.5s;   /* Internet Explorer */
+     -o-animation: fadein 4.5s;   /* Opera < 12.1 */
+        animation: fadein 4.5s;
+}
+
 .icons a {
   text-align: center;
   font-size: 1.5rem;
@@ -35,13 +49,22 @@ h1 {
         animation: fadein 4s;
 }
 
+.icons {
+  margin-top: -1rem;
+}
+
 .fab {
   font-size: 1.3rem;
 }
 
-a:hover {
+a:hover, #resume:hover {
   transition: 1s;
   color: #EA6844;
+}
+
+a, #resume {
+  transition: 1s;
+  color: #A9A9A9;
 }
 
 #info {

@@ -7,7 +7,12 @@
     color: #70798a;
   }
 
-  .icons a {
+  .icons a, #resume {
     color: #535a66;
+  }
+
+  a:hover, #resume:hover {
+    transition: 1s;
+    color: #FFFFFF;
   }
 }
