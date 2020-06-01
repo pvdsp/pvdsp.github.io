@@ -1,18 +1,18 @@
 @media (prefers-color-scheme: dark) {
   html, body {
-    background: #222831;
+    background: #2E3440;
   }
 
   h1 {
-    color: #70798a;
+    color: #E5E9F0;
   }
 
   .icons a, #resume {
-    color: #535a66;
+    color: #D8DEE9;
   }
 
   a:hover, #resume:hover {
     transition: 1s;
-    color: #FFFFFF;
+    color: #BF616A;
   }
 }

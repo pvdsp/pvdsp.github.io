@@ -5,14 +5,14 @@
 }
 
 html, body {
-  background: #FEFCFB;
+  background: #ECEFF4;
 }
 
 h1 {
   font-family: Work Sans;
   font-size: 2.9rem;
   font-weight: 600;
-  color: #EA6844;
+  color: #5E81AC;
 
   /* https://stackoverflow.com/questions/11679567/ */
   -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
@@ -39,7 +39,7 @@ h1 {
 .icons a {
   text-align: center;
   font-size: 1.5rem;
-  color: #A9A9A9;
+  color: #81A1C1;
   width: 15rem;
 
   /* https://stackoverflow.com/questions/11679567/ */
@@ -60,12 +60,12 @@ h1 {
 
 a:hover, #resume:hover {
   transition: 1s;
-  color: #EA6844;
+  color: #BF616A;
 }
 
 a, #resume {
   transition: 1s;
-  color: #A9A9A9;
+  color: #81A1C1;
 }
 
 #info {
