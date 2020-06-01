@@ -9,8 +9,9 @@ html, body {
 }
 
 h1 {
-  font-family: Karla;
+  font-family: Work Sans;
   font-size: 2.9rem;
+  font-weight: 600;
   color: #EA6844;
 
   /* https://stackoverflow.com/questions/11679567/ */
@@ -22,7 +23,7 @@ h1 {
 }
 
 #resume {
-  font-family: Karla;
+  font-family: Work Sans;
   font-size: 1rem;
 
   margin-top: -0.1rem;
@@ -50,7 +51,7 @@ h1 {
 }
 
 .icons {
-  margin-top: -1rem;
+  margin-top: -1.6rem;
 }
 
 .fab {
