@@ -4,8 +4,12 @@
     to   { opacity: 1; }
 }
 
-html, body {
+#info, html {
+  width: 100%;
+  height: 90%;
+  display: grid;
   background: #ECEFF4;
+  place-items: center;
 }
 
 h1 {
@@ -25,7 +29,6 @@ h1 {
 #resume {
   font-family: Work Sans;
   font-size: 1rem;
-
   margin-top: -0.1rem;
   text-decoration: none;
 
@@ -66,14 +69,4 @@ a:hover, #resume:hover {
 a, #resume {
   transition: 1s;
   color: #81A1C1;
-}
-
-#info {
-  transform: translate(-50%, -50%);
-  position: absolute;
-  text-align: center;
-  margin-right: -50%;
-  padding: 0.6rem;
-  left: 50%;
-  top: 45%;
 }
