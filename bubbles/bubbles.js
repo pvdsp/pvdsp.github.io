@@ -2,6 +2,7 @@
 // const screenHeight = windowHeight - 10;
 const circleRadius = 80;
 
+let playing = true;
 let bubbles = [];
 let lives = 3;
 let score = 0;
@@ -32,21 +33,31 @@ function setup() {
 
 function draw() {
   background('#ECEFF4');
-  textSize(32);
-  text('Score: ' + str(score), 25, 50);
-  text('Lives: ' + str(lives), 25, 100);
   for (let i = 0; i < bubbles.length; i++) {
     bubbles[i].display();
   }
-  if (random() < 0.03) {
+  if (random() < 0.03 && playing) {
     bubbles.push(new Bubble());
     if (bubbles.length >= 50) {
-      reset();
+      playing = false;
     }
+  }
+  if (playing) {
+    textSize(30);
+    textAlign(LEFT, CENTER);
+    text('Score: ' + str(score), 25, 50);
+    text('Lives: ' + str(lives), 25, 100);
+  } else {
+    textSize(50);
+    textAlign(CENTER, CENTER);
+    fill(50, 50);
+    rect(0, 0, width, height);
+    text("Game over!\nScore: " + str(score), 150, 100);
   }
 }
 
 function reset() {
+  playing = true;
   bubbles = [];
   lives = 3;
   score = 0;
@@ -63,20 +74,24 @@ function mousePressed(){
 		return;
 	}
 	released = false;
-  unpopped = true
-  for (let i = bubbles.length - 1; i >= 0; i--) {
-    var b = bubbles[i]
-    if (dist(mouseX, mouseY, b.x, b.y) < b.radius) {
-        score += 1;
-        bubbles.splice(i, 1);
-        unpopped = false;
-        break;
+  if (playing) {
+    unpopped = true
+    for (let i = bubbles.length - 1; i >= 0; i--) {
+      var b = bubbles[i]
+      if (dist(mouseX, mouseY, b.x, b.y) < b.radius) {
+          score += 1;
+          bubbles.splice(i, 1);
+          unpopped = false;
+          break;
+      }
     }
-  }
-  if (unpopped) {
-    lives -= 1;
-    if (lives == 0) {
-      reset();
+    if (unpopped) {
+      lives -= 1;
+      if (lives == 0) {
+        playing = false;
+      }
     }
+  } else {
+    reset();
   }
 }
