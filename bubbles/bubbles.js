@@ -52,7 +52,17 @@ function reset() {
   score = 0;
 }
 
-function touchEnded() {
+var released = true;
+function mouseReleased(){
+	released = true;
+	return false;
+}
+
+function mousePressed(){
+	if(!released){
+		return;
+	}
+	released = false;
   unpopped = true
   for (let i = bubbles.length - 1; i >= 0; i--) {
     var b = bubbles[i]
