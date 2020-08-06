@@ -40,6 +40,9 @@ function draw() {
   }
   if (random() < 0.03) {
     bubbles.push(new Bubble());
+    if (bubbles.length >= 50) {
+      reset();
+    }
   }
 }
 
