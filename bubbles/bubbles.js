@@ -52,7 +52,7 @@ function reset() {
   score = 0;
 }
 
-function mousePressed() {
+function mouseReleased() {
   unpopped = true
   for (let i = bubbles.length - 1; i >= 0; i--) {
     var b = bubbles[i]
