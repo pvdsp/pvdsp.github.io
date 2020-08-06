@@ -27,7 +27,7 @@ class Bubble {
 }
 
 function setup() {
-  createCanvas(windowWidth - 20, windowHeight - 20);
+  canvas = createCanvas(windowWidth - 20, windowHeight - 20);
 }
 
 function draw() {
@@ -52,7 +52,7 @@ function reset() {
   score = 0;
 }
 
-function mouseReleased() {
+function touchEnded() {
   unpopped = true
   for (let i = bubbles.length - 1; i >= 0; i--) {
     var b = bubbles[i]
