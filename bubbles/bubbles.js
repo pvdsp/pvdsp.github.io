@@ -3,6 +3,7 @@
 const circleRadius = 80;
 
 let bubbles = [];
+let lives = 3;
 let score = 0;
 
 class Bubble {
@@ -33,6 +34,7 @@ function draw() {
   background('#ECEFF4');
   textSize(32);
   text('Score: ' + str(score), 25, 50);
+  text('Lives: ' + str(lives), 25, 100);
   for (let i = 0; i < bubbles.length; i++) {
     bubbles[i].display();
   }
@@ -41,13 +43,27 @@ function draw() {
   }
 }
 
+function reset() {
+  bubbles = [];
+  lives = 3;
+  score = 0;
+}
+
 function mousePressed() {
-  for (let i = bubbles.length - 1; i > 0; i--) {
+  unpopped = true
+  for (let i = bubbles.length - 1; i >= 0; i--) {
     var b = bubbles[i]
     if (dist(mouseX, mouseY, b.x, b.y) < b.radius) {
         score += 1;
         bubbles.splice(i, 1);
+        unpopped = false;
         break;
+    }
+  }
+  if (unpopped) {
+    lives -= 1;
+    if (lives == 0) {
+      reset();
     }
   }
 }
