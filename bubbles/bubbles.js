@@ -42,12 +42,12 @@ function draw() {
 }
 
 function mousePressed() {
-  for (let i = 0; i < bubbles.length; i++) {
+  for (let i = bubbles.length - 1; i > 0; i--) {
     var b = bubbles[i]
     if (dist(mouseX, mouseY, b.x, b.y) < b.radius) {
         score += 1;
         bubbles.splice(i, 1);
-        console.log(score);
+        break;
     }
   }
 }
