@@ -1,9 +1,9 @@
-// const screenWidth = windowWidth - 10;
-// const screenHeight = windowHeight - 10;
+
 const circleRadius = 80;
 
 let playing = true;
 let bubbles = [];
+let speed = 0.03;
 let lives = 3;
 let score = 0;
 
@@ -36,17 +36,17 @@ function draw() {
   for (let i = 0; i < bubbles.length; i++) {
     bubbles[i].display();
   }
-  if (random() < 0.03 && playing) {
+  if (random() < 0.03 + (score / 1000) && playing) {
     bubbles.push(new Bubble());
-    if (bubbles.length >= 50) {
+    if (bubbles.length >= 30) {
       playing = false;
     }
   }
   if (playing) {
     textSize(30);
     textAlign(LEFT, CENTER);
-    text('Score: ' + str(score), 25, 50);
-    text('Lives: ' + str(lives), 25, 100);
+    text(str(score), windowWidth - 80, 50);
+    text('❤️'.repeat(lives), 25, 50);
   } else {
     textSize(50);
     textAlign(CENTER, CENTER);
