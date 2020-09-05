@@ -1,7 +1,7 @@
 
 const circleRadius = 80;
 
-let playing = true;
+let playing = false;
 let bubbles = [];
 let speed = 0.03;
 let lives = 3;
@@ -52,6 +52,7 @@ function draw() {
     textAlign(CENTER, CENTER);
     fill(50, 50);
     rect(0, 0, width, height);
+    fill(0, 80);
     text("Game over!\nScore: " + str(score), 150, 100);
   }
 }
