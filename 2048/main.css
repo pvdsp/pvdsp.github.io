@@ -1,0 +1,81 @@
+@keyframes fadein {
+    /* https://stackoverflow.com/questions/11679567/ */
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+html {
+  background: #bbada0;
+}
+
+#info, html {
+  width: 100%;
+  height: 90%;
+  display: grid;
+  place-items: center;
+}
+
+.grid {
+  display: block;
+  width: 75%;
+}
+
+h1 {
+  font-family: Work Sans;
+  font-size: 2.9rem;
+  font-weight: 600;
+  text-align: center;
+  color: #5E81AC;
+
+  /* https://stackoverflow.com/questions/11679567/ */
+  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+   -moz-animation: fadein 3s;   /* Firefox < 16 */
+    -ms-animation: fadein 3s;   /* Internet Explorer */
+     -o-animation: fadein 3s;   /* Opera < 12.1 */
+        animation: fadein 3s;
+}
+
+#resume {
+  font-family: Work Sans;
+  font-size: 1rem;
+  margin-top: -0.1rem;
+  text-decoration: none;
+
+  -webkit-animation: fadein 4.5s; /* Safari, Chrome and Opera > 12.1 */
+   -moz-animation: fadein 4.5s;   /* Firefox < 16 */
+    -ms-animation: fadein 4.5s;   /* Internet Explorer */
+     -o-animation: fadein 4.5s;   /* Opera < 12.1 */
+        animation: fadein 4.5s;
+}
+
+.icons a {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #81A1C1;
+  width: 15rem;
+
+  /* https://stackoverflow.com/questions/11679567/ */
+  -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+   -moz-animation: fadein 4s;   /* Firefox < 16 */
+    -ms-animation: fadein 4s;   /* Internet Explorer */
+     -o-animation: fadein 4s;   /* Opera < 12.1 */
+        animation: fadein 4s;
+}
+
+.icons {
+  margin-top: -1.6rem;
+}
+
+.fab {
+  font-size: 1.3rem;
+}
+
+a:hover, #resume:hover {
+  transition: 1s;
+  color: #BF616A;
+}
+
+a, #resume {
+  transition: 1s;
+  color: #81A1C1;
+}
