@@ -27,10 +27,13 @@ function changeColour() {
 	if (event.keyCode == 66) {
 		document.getElementsByTagName("html")[0].style.background = "#F2FFE8";
 		document.getElementsByTagName("h1")[0].style.color = "#5DAB20";
-		document.getElementsByTagName("a")[0].style.color = "#76AC4C"; 
-		document.getElementsByTagName("a")[1].style.color = "#76AC4C"; 
-		document.getElementsByTagName("a")[2].style.color = "#76AC4C"; 
-		document.getElementsByTagName("a")[3].style.color = "#76AC4C"; 
-		document.getElementById("resume").style.color = "#76AC4C"; 
+		document.getElementById("github").style.color = "#76AC4C"; 
+		document.getElementById("telegram").style.color = "#76AC4C"; 
+		document.getElementById("twitter").style.color = "#76AC4C"; 
+		document.getElementById("linkedin").style.color = "#76AC4C"; 
+		document.getElementById("resume").style.color = "#76AC4C";  
+		document.getElementById("ctf").style.color = "#76AC4C";  
+		document.getElementById("ctf").style.visibility = "visible";
+		document.getElementById("ctf").style.display = null;
 	}
 }
