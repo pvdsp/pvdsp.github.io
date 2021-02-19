@@ -27,13 +27,42 @@ function changeColour() {
 	if (event.keyCode == 66) {
 		document.getElementsByTagName("html")[0].style.background = "#F2FFE8";
 		document.getElementsByTagName("h1")[0].style.color = "#5DAB20";
+		var list = document.getElementsByTagName("td");
+		for (let item of list) {
+			item.style.color = "#006400";
+		}
+		var list = document.getElementsByTagName("tr");
+		for (let item of list) {
+			item.style.color = "#006400";
+		}
+		var list = document.getElementsByTagName("a");
+		for (let item of list) {
+			item.style.color = "#006400";
+		}
+
 		document.getElementById("github").style.color = "#76AC4C"; 
 		document.getElementById("telegram").style.color = "#76AC4C"; 
 		document.getElementById("twitter").style.color = "#76AC4C"; 
 		document.getElementById("linkedin").style.color = "#76AC4C"; 
-		document.getElementById("resume").style.color = "#76AC4C";  
+		document.getElementById("resumeLink").style.color = "#76AC4C";  
 		document.getElementById("ctf").style.color = "#76AC4C";  
 		document.getElementById("ctf").style.visibility = "visible";
 		document.getElementById("ctf").style.display = null;
+	}
+}
+
+function toggleScreen() {
+	var n = document.getElementById("name");
+	var r = document.getElementById("resume");
+	var i = document.getElementById("info");
+	var w = window.innerWidth
+
+	if (n.style.display === "none") {
+	  n.style.display = "grid";
+	  r.style.display = "none";
+	} else {
+	  n.style.display = "none";
+	  if (w > 780) r.style.display = "flex";
+	  if (w <= 780) r.style.display = "block";
 	}
 }
