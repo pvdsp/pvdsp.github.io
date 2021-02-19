@@ -8,9 +8,9 @@ html {
   background: #ECEFF4;
 }
 
-#info, html {
+.info, html {
   width: 100%;
-  height: 90%;
+  height: 100%;
   display: grid;
   place-items: center;
 }
@@ -30,7 +30,13 @@ h1 {
         animation: fadein 3s;
 }
 
-#resume {
+.link {
+  font-family: Karla;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#resumeLink {
   font-family: Work Sans;
   font-size: 1rem;
   margin-top: -0.1rem;
@@ -43,7 +49,11 @@ h1 {
         animation: fadein 4.5s;
 }
 
-.icons a {
+.social {
+  color: #81A1C1;
+}
+
+.icons {
   text-align: center;
   font-size: 1.5rem;
   color: #81A1C1;
@@ -65,12 +75,7 @@ h1 {
   font-size: 1.3rem;
 }
 
-a:hover, #resume:hover {
-  transition: 1s;
-  color: #BF616A;
-}
-
-a, #resume {
+#resumeLink {
   transition: 1s;
   color: #81A1C1;
 }
@@ -80,4 +85,70 @@ canvas {
   left: 0px;
   position: fixed;
   pointer-events: none;
+}
+
+table, th, td, .link {
+  font-family: Karla;
+  color: #3B4252;
+}
+
+a:hover, #resumeLink:hover, .link:hover {
+  color: #BF616A;
+  cursor: pointer;
+}
+
+table, th, td {
+  padding: 10px;
+  font-weight: 10;
+  word-wrap: break-word;
+}
+
+table {
+  width: 100%;
+
+  /* https://stackoverflow.com/questions/11679567/ */
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+   -moz-animation: fadein 1s;   /* Firefox < 16 */
+    -ms-animation: fadein 1s;   /* Internet Explorer */
+     -o-animation: fadein 1s;   /* Opera < 12.1 */
+        animation: fadein 1s;
+}
+
+.title {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+td {
+  vertical-align: top;
+}
+
+td.location {
+  vertical-align: top;
+  text-align: right;
+  width: 20%;
+
+}
+
+hr.solid {
+  border: 1px solid;
+  border-color: #3B4252;
+  opacity: 10%;
+}
+
+.description {
+  opacity: 80%;
+  font-style: italic;
+}
+
+#resume {
+  display: none;
+}
+
+#back, #pdf {
+  font-family: Work Sans;
+  transform: rotate(-90deg);
+  color: #BF616A;
+  width: 1em;
+  height: 1em;
 }

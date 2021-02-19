@@ -15,6 +15,9 @@
       <link rel="stylesheet" href="css/dark.css">
       <script src="js/canvas.js"></script>
 
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+	  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+
       <!-- Favicon Configuration -->
       <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
       <link rel="icon" type="image/png" href="/img/favicons/favicon-32x32.png" sizes="32x32">
@@ -33,16 +36,99 @@
   </head>
 
   <body onkeydown="changeColour()">
-      <div id="info">
+      <div class="info" id="name">
           <h1>Patrick Van der Spiegel</h1>
           <div class="icons">
-            <a href="https://github.com/pvdsp" target="_blank" id="github"><i class="fab fa-git"></i></a>
-            <a href="https://t.me/pvdsp" target="_blank" id="telegram"><i class="fab fa-telegram-plane"></i></a>
-            <a href="https://twitter.com/pvdsp" target="_blank" id="twitter"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.linkedin.com/in/pvdsp/" target="_blank" id="linkedin"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://ctftime.org/team/83549" target="_blank" style="visibility: hidden; display: none" id="ctf"><i class="fas fa-seedling"></i></a>
+            <a href="https://github.com/pvdsp" target="_blank" class="social" id="github"><i class="fab fa-git"></i></a>
+            <a href="https://t.me/pvdsp" target="_blank" class="social" id="telegram"><i class="fab fa-telegram-plane"></i></a>
+            <a href="https://twitter.com/pvdsp" target="_blank" class="social" id="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/pvdsp/" target="_blank" class="social" id="linkedin"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://ctftime.org/team/83549" target="_blank" class="social" style="visibility: hidden; display: none" id="ctf"><i class="fas fa-seedling"></i></a>
           </div>
-          <a id="resume" href="resume.pdf">click for resume</a>
+
+          <a id="resumeLink" onclick="toggleScreen()">click for resume</a>
+      </div>
+
+      <div id="resume">
+      	<a id="back" onclick="toggleScreen()">back</a>
+      	<a id="pdf" href="resume.pdf">pdf</a>
+      	<table>
+          	<tr>
+          		<td class="title">Education 📚</td>
+          	</tr>
+          	<tr>
+          		<td><a href="https://vub.be" class="link" target="_blank">Vrije Universiteit Brussel</a><br>
+          			<i>Master of Science in Computer Science</i><br>
+          			<i>Artificial Intelligence</i></td>
+          		<td class="location"><b>Brussels</b><br>
+          			<i>Since 2019</i></td>
+          	</tr>
+          	<tr>
+          		<td><a href="https://vub.be" class="link" target="_blank">Vrije Universiteit Brussel</a><br>
+          			<i>Bachelor of Science in Computer Science</i></td>
+          		<td class="location"><b>Brussels</b><br>
+          			<i>2015 - 2019</i></td>
+          	</tr>
+          </table>
+          <hr class="solid">
+          <table>
+          	<tr>
+          		<td class="title">Experience ⌨️</td>
+          	</tr>
+          	<tr>
+          		<td><a href="https://ai.vub.ac.be/" class="link" target="_blank">Vrije Universiteit Brussel &ndash; AI Lab</a><br>
+          			<i>Developer</i><br><br>
+          			<p class="description">In the summer of 2019, I was asked to help on a new project about behaviour anomaly detection in a cyber security context. For this project, I wrote a data
+					pre-processor for machine learning models. I resumed my work in
+					the summer of 2020, where I worked on the detection of anomalies using
+					finite state machines and automata theory. This ongoing project is a collaboration
+					between the <a href="https://ai.vub.ac.be/" class="link" target="_blank">VUB AI Lab</a> and <a href="https://www.nviso.eu/" class="link" target="_blank">NVISO</a>, a Brussels-based cyber security
+					firm.</p></td>
+          		<td class="location"><b>Brussels</b><br>
+          			<i>Summer '19</i><br>
+          			<i>Summer '20</i></td>
+          	</tr>
+          </table>
+          <hr class="solid">
+          <table>
+          	<tr>
+          		<td class="title">Accomplishments 🏆</td>
+          	</tr>
+          	<tr>
+          	</tr>
+          	<tr>
+          		<td><a href="https://cybersecuritychallenge.be/" class="link" target="_blank">Cyber Security Challenge Belgium</a><br>
+          			<i>Finalist</i><br><br>
+          			<p class="description">In March 2020, my colleagues of the <a href="https://cybersecuritychallenge.be/" class="link" target="_blank">“U+1F966”</a> team and I managed to finish 2nd (of the more than 200 competing teams) at the qualifiers of the Cyber Security Challenge Belgium. In the finals,
+					which were postponed due to the coronavirus outbreak, we ended
+					up in the 7th place.</p></td>
+          		<td class="location"><b>Online</b><br>
+          			<i>2020</i></td>
+          	</tr>
+          	<tr>
+          		<td><a href="https://cybersecuritychallenge.be/" class="link" target="_blank">Cyber Security Challenge Belgium</a><br>
+          			<i>Winner of the CSI Game</i><br><br>
+          			<p class="description">In March 2019, my team and I won the CSI Game. In this challenge, 26 competing pre-finalists of the Cyber Security Challenge Belgium
+					were instructed to investigate a fictional security breach. Technical
+					and interrogative skills were required to correctly fill in a
+					questionnaire about the incident. Our team – consisting of three
+					colleagues and I – ended up as the winners of this challenge.</p></td>
+          		<td class="location"><b>Brussels</b><br>
+          			<i>2019</i></td>
+          	</tr>
+          	<tr>
+          		<td><a href="https://overheid.vlaanderen.be/opleiding/nlp4gov-de-eerste-belgische-nlp-hackathon" class="link" target="_blank">#NLP4GOV</a><br>
+          			<i>Nominated for Startup Prize</i><br><br>
+          			<p class="description">In 2018, a colleague and I participated in the first Belgian NLP hackathon, organized by the Flemish government. We were
+					approached by <a href="https://www.soprasteria.be/home" class="link" target="_blank">Sopra Steria</a> – a large consultancy firm – to join
+					forces. After an intensive collaboration during the week-long event,
+					we ended up being one of the two nominated teams for “best
+					startup”.</p></td>
+          		<td class="location"><b>Leuven</b><br>
+          			<i>2018</i></td>
+          	</tr>
+          </table>
+
       </div>
   </body>
 </html>
