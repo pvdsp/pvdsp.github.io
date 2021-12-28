@@ -26,28 +26,29 @@ function draw() {
 function changeColour() {
 	if (event.keyCode == 66) {
 		document.getElementsByTagName("html")[0].style.background = "#F2FFE8";
-		document.getElementsByTagName("h1")[0].style.color = "#5DAB20";
-		var list = document.getElementsByTagName("td");
+		document.getElementsByTagName("h1")[0].style.color = "#57a11d"; // "#5DAB20";
+		
+		var list = document.getElementsByTagName("h2");
 		for (let item of list) {
-			item.style.color = "#006400";
-		}
-		var list = document.getElementsByTagName("tr");
-		for (let item of list) {
-			item.style.color = "#006400";
+			item.style.color = "#5ba81e";
 		}
 		var list = document.getElementsByTagName("a");
 		for (let item of list) {
-			item.style.color = "#006400";
+			item.style.color = "#017d01";
 		}
+		// var list = document.getElementsByTagName("tr");
+		// for (let item of list) {
+		// 	item.style.color = "#006400";
+		// }
+		// var list = document.getElementsByTagName("a");
+		// for (let item of list) {
+		// 	item.style.color = "#006400";
+		// }
 
-		document.getElementById("github").style.color = "#76AC4C"; 
-		document.getElementById("telegram").style.color = "#76AC4C"; 
-		document.getElementById("twitter").style.color = "#76AC4C"; 
-		document.getElementById("linkedin").style.color = "#76AC4C"; 
-		document.getElementById("resumeLink").style.color = "#76AC4C";  
-		document.getElementById("ctf").style.color = "#76AC4C";  
-		document.getElementById("ctf").style.visibility = "visible";
-		document.getElementById("ctf").style.display = null;
+		// document.getElementById("github").style.color = "#76AC4C";
+		// document.getElementById("ctf").style.color = "#76AC4C";  
+		// document.getElementById("ctf").style.visibility = "visible";
+		// document.getElementById("ctf").style.display = null;
 	}
 }
 
