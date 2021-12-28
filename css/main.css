@@ -16,68 +16,45 @@ html {
 }
 
 h1 {
-  font-family: Work Sans;
-  font-size: 2.9rem;
-  font-weight: 600;
+  font-family: Epilogue, sans-serif;
+  font-size: 4rem;
   text-align: center;
-  color: #5E81AC;
+  color: #2e3440;
 
   /* https://stackoverflow.com/questions/11679567/ */
   -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
    -moz-animation: fadein 3s;   /* Firefox < 16 */
     -ms-animation: fadein 3s;   /* Internet Explorer */
-     -o-animation: fadein 3s;   /* Opera < 12.1 */
+     -o-animatbackion: fadein 3s;   /* Opera < 12.1 */
         animation: fadein 3s;
 }
 
-.link {
-  font-family: Karla;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-#resumeLink {
-  font-family: Work Sans;
-  font-size: 1rem;
-  margin-top: -0.1rem;
-  text-decoration: none;
-
-  -webkit-animation: fadein 4.5s; /* Safari, Chrome and Opera > 12.1 */
-   -moz-animation: fadein 4.5s;   /* Firefox < 16 */
-    -ms-animation: fadein 4.5s;   /* Internet Explorer */
-     -o-animation: fadein 4.5s;   /* Opera < 12.1 */
-        animation: fadein 4.5s;
-}
-
-.social {
-  color: #81A1C1;
-}
-
-.icons {
+a, h2, h3 {
+  font-family: Epilogue, sans-serif;
+  font-weight: 200;
   text-align: center;
-  font-size: 1.5rem;
-  color: #81A1C1;
-  width: 15rem;
+  color: #3b4252;
+}
 
+a, h2 {
+  font-size: 1.75rem;
+}
+
+#title {
+  margin-top: -2rem;
+}
+
+#contact {
+  margin-top: -1rem;
+}
+
+h2 {
   /* https://stackoverflow.com/questions/11679567/ */
   -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
    -moz-animation: fadein 4s;   /* Firefox < 16 */
     -ms-animation: fadein 4s;   /* Internet Explorer */
      -o-animation: fadein 4s;   /* Opera < 12.1 */
         animation: fadein 4s;
-}
-
-.icons {
-  margin-top: -1.6rem;
-}
-
-.fab {
-  font-size: 1.3rem;
-}
-
-#resumeLink {
-  transition: 1s;
-  color: #81A1C1;
 }
 
 canvas {
@@ -87,69 +64,7 @@ canvas {
   pointer-events: none;
 }
 
-table, th, td, .link {
-  font-family: Karla;
-  color: #3B4252;
-}
-
-a:hover, #resumeLink:hover, .link:hover {
+a:hover, .link:hover {
   color: #BF616A;
   cursor: pointer;
-}
-
-table, th, td {
-  padding: 10px;
-  font-weight: 10;
-  word-wrap: break-word;
-}
-
-table {
-  width: 30%;
-
-  /* https://stackoverflow.com/questions/11679567/ */
-  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
-   -moz-animation: fadein 1s;   /* Firefox < 16 */
-    -ms-animation: fadein 1s;   /* Internet Explorer */
-     -o-animation: fadein 1s;   /* Opera < 12.1 */
-        animation: fadein 1s;
-}
-
-.title {
-  font-weight: 600;
-  text-decoration: underline;
-}
-
-td {
-  vertical-align: top;
-}
-
-td.location {
-  vertical-align: top;
-  font-weight: bold;
-  text-align: right;
-  width: 20%;
-
-}
-
-hr.solid {
-  border: 1px solid;
-  border-color: #3B4252;
-  opacity: 10%;
-}
-
-.description {
-  opacity: 80%;
-  font-style: italic;
-}
-
-#resume {
-  display: none;
-}
-
-#back, #pdf {
-  font-family: Work Sans;
-  transform: rotate(-90deg);
-  color: #BF616A;
-  width: 1em;
-  height: 1em;
 }
